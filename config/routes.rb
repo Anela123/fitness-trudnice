@@ -11,3 +11,5 @@ get '/kontakt' => 'pages#kontakt'
 get '/login' => 'pages#login'
 get '/poklonbon' => 'pages#poklonbon'
 end
+
+
