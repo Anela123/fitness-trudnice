@@ -1,0 +1,103 @@
+<h3> </h3>
+<br/><br/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 5px 10px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 10px 0;
+
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 50%;
+    }
+}
+</style>
+</head>
+<body>
+
+<h2>Formular za prijavu</h2>
+
+
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="https://www.w3schools.com/howto/img_avatar2.png">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Ime</b></label>
+    <input type="text" placeholder="Upišite Vaše ime" name="uname" required>
+
+    <label for="psw"><b>Lozinka</b></label>
+    <input type="password" placeholder="Upišite Vašu lozinku" name="psw" required>
+        
+    <button type="submit">Registruj se</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Zapamti me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Napusti</button>
+    <span class="psw">Zaboravljena <a href="#">lozinka?</a></span>
+  </div>
+</form>
+
+</body>
+</html>
